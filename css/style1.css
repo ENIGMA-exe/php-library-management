@@ -1,0 +1,122 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    padding-top: 2%;
+    background-image:url(../img/IIIT-Bhubaneswar.jpg);
+    background-size: 100% 100%;
+    backdrop-filter: blur(1px);
+    background-repeat: no-repeat;
+}
+.main{
+    z-index:9999;
+    height: 94%;
+    width: 75%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    /*border: 2px solid white;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(2px);*/
+}
+.submain{
+    height: 100%;
+    width: 50%;
+    color: white;
+    /*background-image: url('img/coffee.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;*/
+}
+.sec-heading{
+    border: 1px solid white;
+    text-align: center;
+    height: 15%;
+    font-size: 2rem;
+    padding-top: 3%;
+    margin-top: 10%;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(8px);
+    margin-left: 2%;
+}
+
+.sec_text{
+    margin-top: 10%;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(8px);
+    margin-left: 2%;
+}
+.sec_text > p{
+    padding-left: 1%;
+    font-size: large;
+}
+.login-box{
+    height: 100%;
+    width: 50%;
+    background-size: 100% 100%;
+}
+.user_login{
+    width: 70%;
+    height: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(8px);
+    margin-top: 10%;
+    border: 2px solid transparent;
+}
+.login-box-heading{
+    height: 15%;
+    width: 100%;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 4%;
+    margin-top: 5%;
+    margin-bottom: 15%;
+    font-size: 2rem;
+    color: white;
+}
+.user_id_box,.user_pass_box{
+    width: 95%;
+    height: 15%;
+    display: flex;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+input{
+    width: 85%;
+    height: 80%;
+    border-radius: 30px;
+    text-align: center;
+    font-size: large;
+    font-family: sans-serif;
+    border: none;
+    outline: none;
+}
+.usr_id_logo,.usr_pass_logo{
+    font-size: 40px;
+    margin-top: 1%;
+    margin-right: 5%;
+    color: rgb(190, 236, 236);
+}
+.submit{
+    height: 13%;
+    width: 90%;
+    border-radius: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 530;
+    background-image: linear-gradient(to right, rgb(9, 110, 9),rgb(89, 231, 101));
+    /*background-color: rgba(17, 161, 17, 0.801);*/
+    color: rgb(255, 255, 255);
+    border: none;
+}

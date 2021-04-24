@@ -1,0 +1,283 @@
+    <html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>belly de library</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
+</head>
+<body>
+    <link rel="stylesheet" href="../css/style2.css">
+    <nav>
+        <div class="logo"><img src="/img/IIIT-Bhubaneswar.jpg" alt=""></div>
+        <div class="lo-head">IIIT-Bhubaneswar</div>
+
+        <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+        </ul>
+
+        <input id="search" type="text" placeholder="search">
+        <button class="search">Search</button>
+    </nav>
+
+    <div class="oporation">
+        <div class="opo-head">Belly de Biblioteca</div>
+        <ul>
+            <li onmouseover="hoverin()" onmouseout="hoverout()">Section</li>
+            <li onclick="modal_1()">Book Reg.</li>
+            <li onclick="modal_2()">Book Borrow</li>
+            <li onclick="modal_3()">Book Return</li>
+            <li>Log Out</li>
+        </ul>
+    </div>
+
+    <div class="sub-list" onmouseover="hoverin()" onmouseout="hoverout()">
+        <ul>
+            <li>Computer science & engg.</li>
+            <li>Mathematics</li>
+            <li>Electrical & Electronics</li>
+            <li>business & economics</li>
+            <li>literature</li>
+            <li>politics and current event</li>
+        </ul>
+    </div>
+    <!-- .....................modal box.................................................... -->
+
+    <!-- .........................book reg. - modal box......................................... -->
+
+    <div class="modal-1">
+        <div class="modal-1-content">
+            <div class="modal-1-heading">Book Registration <span onclick="cross_1()">&#x2716;</span>
+            </div>
+            <input type="text" id="bkreg-1" placeholder="name">
+            <input type="text" id="bkreg-2" placeholder="url">
+            <input type="text" id="bkreg-3" placeholder="image path">
+
+            <label for="section">Section</label>
+            <select name="book-secton" id="book-section" aria-placeholder="section">
+                <option value="Computer-science-and-engg.">Computer science & engg.</option>
+                <option value="mathematics">Mathematics</option>
+                <option value="electrical-and-Electronics">Electrical & Electronics</option>
+                <option value="business-and-economics">business & economics</option>
+                <option value="literature">literature</option>
+                <option value="politics-and-current-event">politics and current event</option>
+            </select>
+            <button class="book-registration" onclick="BookReg()">Registor</button>
+        </div>
+    </div>
+
+    <!-- ................................book borrow - model box............................... -->
+
+    <div class="modal-2">
+        <div class="modal-2-content">
+            <div class="modal-2-heading">Book Borrow <span onclick="cross_2()">&#x2716;</span>
+            </div>
+
+            <div class="info">
+                <div class="stu-details">
+                    <input type="text" placeholder="student name">
+                    <input type="text" placeholder="college ID">
+                    <input type="text" placeholder="contact no.">
+                </div>
+                <div class="book-details">
+                    <input type="text" placeholder="book 1">
+                    <input type="text" placeholder="book 2">
+                    <input type="text" placeholder="book 3">
+                </div>
+            </div>
+            <button>Borrow</button>
+        </div>
+    </div>
+
+    <!-- ................................book return- model box............................... -->
+
+    <div class="modal-3">
+        <div class="modal-3-content">
+            <div class="modal-3-heading">Book Return <span onclick="cross_3()">&#x2716;</span>
+            </div>
+
+            <div class="info">
+                <div class="stu-details">
+                    <input type="text" placeholder="student name">
+                    <input type="text" placeholder="college ID">
+                </div>
+                <div class="book-details">
+                    <input type="text" placeholder="book 1 ID">
+                    <input type="text" placeholder="book 2 ID">
+                    <input type="text" placeholder="book 3 ID">
+                </div>
+            </div>
+            <button>Return</button>
+        </div>
+    </div>
+    <!-- ...................computer science.......................................... -->
+    <div class="book-sec-heading" id="com-sci">Computer science</div>
+    <div class="book-section" id="com-sci">
+        <div class="book-sub-sec" id="bss-1">
+            <div class="book-img"></div>
+            <div class="book-name">business design</div>
+            <button class="download">GET</button>
+        </div>
+
+        <div class="book-sub-sec" id="bss-1">
+            <div class="book-img"></div>
+            <div class="book-name">business design</div>
+            <button class="download">GET</button>
+        </div>
+
+        <div class="book-sub-sec" id="bss-2">
+            <div class="book-img"></div>
+            <div class="book-name">business design</div>
+            <button class="download">GET</button>
+        </div>
+
+        <div class="book-sub-sec" id="bss-2">
+            <div class="book-img"></div>
+            <div class="book-name">business design</div>
+            <button class="download">GET</button>
+        </div>
+
+        <div class="book-sub-sec" id="bss-3">
+            <div class="book-img"></div>
+            <div class="book-name">business design</div>
+            <button class="download">GET</button>
+        </div>
+
+        <div class="book-sub-sec" id="bss-4">
+            <div class="book-img"></div>
+            <div class="book-name"></div>
+            <button class="download">GET</button>
+        </div>
+
+        <div class="book-sub-sec" id="bss-4">
+            <div class="book-img"></div>
+            <div class="book-name"></div>
+            <button class="download">GET</button>
+        </div>
+
+        <div class="book-sub-sec" id="bss-4">
+            <div class="book-img"></div>
+            <div class="book-name"></div>
+            <button class="download">GET</button>
+        </div>
+
+        <div class="book-sub-sec" id="bss-4">
+            <div class="book-img"></div>
+            <div class="book-name"></div>
+            <button class="download">GET</button>
+        </div>
+
+        <div class="book-sub-sec" id="bss-4">
+            <div class="book-img"></div>
+            <div class="book-name"></div>
+            <button class="download">GET</button>
+        </div>
+
+        <div class="book-sub-sec" id="bss-4">
+            <div class="book-img"></div>
+            <div class="book-name"></div>
+            <button class="download">GET</button>
+        </div>
+    </div>
+
+    <!-- ...................electrical and electronis.......................................... -->
+    <div class="book-sec-heading" id="com-sci">Electrical and Electronics</div>
+    <div class="book-section" id="com-sci">
+        <div class="book-sub-sec" id="bss-1">
+            <div class="book-img"></div>
+            <div class="book-name">business design</div>
+            <button class="download">GET</button>
+        </div>
+
+        <div class="book-sub-sec" id="bss-1">
+            <div class="book-img"></div>
+            <div class="book-name">business design</div>
+            <button class="download">GET</button>
+        </div>
+
+        <div class="book-sub-sec" id="bss-2">
+            <div class="book-img"></div>
+            <div class="book-name">business design</div>
+            <button class="download">GET</button>
+        </div>
+
+        <div class="book-sub-sec" id="bss-2">
+            <div class="book-img"></div>
+            <div class="book-name">business design</div>
+            <button class="download">GET</button>
+        </div>
+
+        <div class="book-sub-sec" id="bss-3">
+            <div class="book-img"></div>
+            <div class="book-name">business design</div>
+            <button class="download">GET</button>
+        </div>
+
+        <div class="book-sub-sec" id="bss-4">
+            <div class="book-img"></div>
+            <div class="book-name"></div>
+            <button class="download">GET</button>
+        </div>
+
+        <div class="book-sub-sec" id="bss-4">
+            <div class="book-img"></div>
+            <div class="book-name"></div>
+            <button class="download">GET</button>
+        </div>
+
+        <div class="book-sub-sec" id="bss-4">
+            <div class="book-img"></div>
+            <div class="book-name"></div>
+            <button class="download">GET</button>
+        </div>
+
+        <div class="book-sub-sec" id="bss-4">
+            <div class="book-img"></div>
+            <div class="book-name"></div>
+            <button class="download">GET</button>
+        </div>
+
+        <div class="book-sub-sec" id="bss-4">
+            <div class="book-img"></div>
+            <div class="book-name"></div>
+            <button class="download">GET</button>
+        </div>
+
+        <div class="book-sub-sec" id="bss-4">
+            <div class="book-img"></div>
+            <div class="book-name"></div>
+            <button class="download">GET</button>
+        </div>
+    </div>
+
+    <!-- ..................................Footer..................................... -->
+
+    <footer>
+        <ul id="about">
+            <li>About us</li>
+            <li>Privacy</li>
+            <li>Newsletter</li>
+            <li>Sitemap</li>
+        </ul>
+
+        <div class="sm_site">
+            <h5>FOLLOW US ON</h5>
+            <ul id="social_site">
+                <li><i class="fab fa-facebook"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-google-plus"></i></li>
+                <li><i class="fab fa-youtube"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+            </ul>
+            <p> Copyright:ID 2021 .......</p>
+        </div>
+    </footer>
+    </body>
+    <script src="../js/app.js"></script>
+    </html>
